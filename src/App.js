@@ -4,6 +4,11 @@ import Header from "./Components/Header/Header";
 import Banner from "./Components/imgs/BannerPrincipal2.svg";
 import  Personagens  from "./Components/Pages/Personagens";
 import PageHome from "./Components/Pages/PageHome"
+import { setConstantValue } from "typescript";
+
+const Main = styled.div`
+  background-color: black;
+`;
 
 
 class App extends React.Component {
@@ -17,9 +22,9 @@ class App extends React.Component {
     const page = this.state.page ? <Personagens /> : <PageHome changePage={this.changePage} />;
 
     return (
-      <div>
+      <Main>
         {page}
-      </div>
+      </Main>
     );
   }
 }

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import React from "react";
 import Header from "../Header/Header";
-import Banner from "../imgs/BannerPrincipal2.svg";
+import Banner from "../imgs/imageBanner.png";
+
 const TesteImagem = styled.div`
   background-image: url(${Banner});
   height: 610px;
@@ -33,7 +34,6 @@ class PageHome extends React.Component{
           <div>
             <Header />
             <TesteImagem />
-    
             <Teste1>
               <Botao onClick={this.props.changePage}>Personagens</Botao>
             </Teste1>

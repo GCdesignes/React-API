@@ -12,10 +12,16 @@ const HEADER = styled.div`
 const Lista = styled.ul`
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 2rem;
 `;
 const Link = styled.a`
   text-decoration: none;
+  color: white;
+`;
+
+const LinkAtual = styled.a`
+  text-decoration: none;
+  border-bottom: 2px solid green;
   color: white;
 `;
 
@@ -26,6 +32,9 @@ class Header extends React.Component {
         <HEADER>
           <img src={logo} alt="teste"></img>
           <Lista>
+            <li>
+              <LinkAtual href="/">Home</LinkAtual>
+            </li>
             <li>
               <Link href="/">Personagens</Link>
             </li>
